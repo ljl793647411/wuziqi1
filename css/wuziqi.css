@@ -1,0 +1,236 @@
+*{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/beijing1.jpg");
+    background-size:contain;
+    background-repeat:no-repeat ;
+}
+.neirong{
+    width: 600px;
+    height: 600px;
+    border: 20px solid #610006;
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    background: #8a3e0b;
+    display: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.youximoshi{
+    width: 100px;
+    height: 30px;
+    background: #ccc;
+    position: absolute;
+    top:120px;
+    left:50px;
+    text-align: center;
+    line-height:30px;
+    font-size: 16px;
+    font-family: "楷体";
+    font-weight: bold;
+}
+
+@keyframes show {
+    0%{
+        transform: scale(0.1,0.1);
+    }
+    100%{
+        transform:scale(1,1);
+    }
+}
+.show{
+    display: block;
+    animation: show 1s cubic-bezier(0.25,0.25,0.75,0.75);
+}
+.kongzhi{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    top:30px;
+    right:210px;
+    display: none;
+}
+.kaishi{
+    width: 50px;
+    height: 250px;
+    position: absolute;
+    top: 140px;
+    right:285px;
+    font-size:30px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "楷体";
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 20;
+}
+.kongzhi div{
+    width: 106px;
+    height: 26px;
+    border: 2px #610006 solid;
+    border-radius: 10px;
+    background: #cc8d09;
+    position: absolute;
+    top: 150px;
+    left:50px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "楷体";
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+
+}
+.kongzhi div:nth-child(2){
+    top:210px;
+}
+.kongzhi div:nth-child(3){
+    top:270px;
+}.kongzhi div:nth-child(4){
+     top:330px;
+ }
+@keyframes moshi2 {
+    0%{
+        transform:scale(1,1);
+    }
+    100%{
+        transform:scale(1.1,1.1);
+
+    }
+}
+.kongzhi .moshi2{
+    animation: moshi2 .1s ease forwards;
+    background: #ffc50a;
+    border: 2px #be600c solid;
+}
+ .kongzhi .moshi3{
+    transform: scale(1.2,1.2);
+    background: #ffc50a;
+    border: 2px #be600c solid;
+}
+.set1{
+    width: 110px;
+    height: 30px;
+    border: 2px #610006 solid;
+    border-radius: 10px;
+    background: #cc8d09;
+    position: absolute;
+    top: 100px;
+    left:50px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "楷体";
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+
+}
+.set1{
+    top:300px;
+}
+.mask{
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    left: 280px;
+    top: 180px;
+    margin:auto;
+    z-index: 9;
+    background-image: url("../img/jieshu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+.mask h1{
+    font-size: 30px;
+    color: #894122;
+    font-weight: bold;
+    font-family: "楷体";
+    padding-top:40px;
+    padding-left: 90px;
+}
+.mask input{
+    width: 100px;
+    height: 30px;
+    border: 2px #610006 solid;
+    border-radius: 10px;
+    background: #cc8d09;
+    position: absolute;
+    bottom: 80px;
+    left:125px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "楷体";
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+}
+.mask .qipu{
+    left:260px;
+}
+.imgbox{
+    width: 640px;
+    height: 640px;
+    background-image: url("../img/jiemian.jpg");
+    background-size: cover;
+    position: absolute;
+    top: -130px;
+    left: 400px;
+    z-index: 133;
+    display: none;
+}
+.mask a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: -250px;
+    right:-380px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "楷体";
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    z-index: 999;
+}
+.yinyue{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: music 2s ease infinite alternate;
+    position: absolute;
+    top:15px;
+    right: 287px;
+
+}
+@keyframes music {
+    0% {
+        transform: scale(1,1);
+    }
+    33%{
+        transform: scale(1.1,1.1);
+
+    }
+    66%{
+        transform: scale(1,1);
+
+    }
+    100% {
+        transform: scale(1.1,1.1);
+    }
+}
