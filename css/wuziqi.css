@@ -10,6 +10,7 @@ body{
     background-image: url("../img/beijing1.jpg");
     background-size:contain;
     background-repeat:no-repeat ;
+    overflow: hidden;
 }
 .neirong{
     width: 600px;
@@ -141,15 +142,15 @@ img{
     top:300px;
 }
 .mask{
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 100vh;
     position: fixed;
-    left: 280px;
-    top: 180px;
+    left: 0;
+    top: 0;
     margin:auto;
     z-index: 9;
     background-image: url("../img/jieshu.png");
-    background-position: center;
+    background-position: 280px 100px;
     background-repeat: no-repeat;
     display: none;
 }
@@ -158,18 +159,19 @@ img{
     color: #894122;
     font-weight: bold;
     font-family: "楷体";
-    padding-top:40px;
-    padding-left: 90px;
+    position: absolute;
+    left: 380px;
+    top:280px;
 }
-.mask input{
+.mask .set,.qipu{
     width: 100px;
     height: 30px;
     border: 2px #610006 solid;
     border-radius: 10px;
     background: #cc8d09;
     position: absolute;
-    bottom: 80px;
-    left:125px;
+    left: 320px;
+    top: 400px;
     font-size: 16px;
     color: #000000;
     font-weight: bold;
@@ -179,26 +181,31 @@ img{
     cursor: pointer;
 }
 .mask .qipu{
-    left:260px;
+    left:460px;
 }
 .imgbox{
     width: 640px;
     height: 640px;
     background-image: url("../img/jiemian.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    top: -130px;
-    left: 400px;
+    top: 50px;
+    left: 765px;
     z-index: 133;
     display: none;
+    text-align: center;
+    padding-top:20px;
 }
-.mask a{
-    display: block;
+.mask a input{
     width: 100px;
     height: 30px;
+    border: 2px #610006 solid;
+    border-radius: 10px;
+    background: #cc8d09;
     position: absolute;
-    bottom: -250px;
-    right:-380px;
+    bottom: 70px;
+    right:140px;
     font-size: 16px;
     color: #000000;
     font-weight: bold;
@@ -207,6 +214,11 @@ img{
     line-height: 26px;
     cursor: pointer;
     z-index: 999;
+    display:none;
+}
+.imgbox img{
+    width: 600px;
+    height: 600px;
 }
 .yinyue{
     width: 80px;
