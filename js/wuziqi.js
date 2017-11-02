@@ -56,7 +56,7 @@ class Game {
     }
 
     //棋盘画五点方法
-        _dian(x, y) {
+        _dian(x,y) {
             console.log(this.huabi)
             this.huabi.save();
             this.huabi.beginPath();
@@ -177,7 +177,6 @@ class Game {
         this.huabi.clearRect(0, 0, 640, 640)
         this.pos = {};
         this._qipan();
-        // this._wudian()
     }
 
     //游戏开始方法
@@ -189,7 +188,7 @@ class Game {
             this.youximoshi.classList.add("moshi3");
             this.wanjia.classList.add("moshi2");
             this._qipan();
-            this._wudian();
+            // this._dian();
         }.bind(this))
 
     }
